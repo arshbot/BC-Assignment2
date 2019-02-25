@@ -1,5 +1,4 @@
 from hashlib import sha1
-from pdb import set_trace
 import urllib2
 
 
