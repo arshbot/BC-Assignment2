@@ -7,7 +7,7 @@ print "Getting 1 million passwords"
 raw_million_list = urllib2.urlopen(url="https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt")
 
 print "Processing..."
-million_list = {w[:-1] for w in raw_million_list}
+million_list = [w[:-1] for w in raw_million_list]
 
 counter = 0
 i = 0
